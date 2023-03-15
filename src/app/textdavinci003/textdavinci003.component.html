@@ -10,12 +10,12 @@
       <form>
         <input
           type="text"
-          name="animal"
+          name="pet"
           placeholder="Enter an animal"
           [(ngModel)]= "pet"
         />
-        <input type="button" value="Generate names" (click)="postCompletition()" />
+        <input type="button" value="Generate names" name = "generatepet" (click)="postCompletition()" />
               </form>
-              <div className=result> {{result}} </div>
+              <div className=result name = "result"> {{result}} </div>
     </main>
 </div>
