@@ -7,10 +7,11 @@ import { BehaviorSubject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class Textdavinci003Service {
+
+export class ModerationsService {
 
   constructor(private http: HttpClient) { }
-  apiURL = 'https://api.openai.com/v1/completions';
+  apiURL = 'https://api.openai.com/v1/moderations';
 
   //Http Options
   httpOptions = {
@@ -27,6 +28,4 @@ export class Textdavinci003Service {
       //catchError()
     )
   }
-
-
 }
